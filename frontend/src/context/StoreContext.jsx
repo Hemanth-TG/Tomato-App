@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 export const StoreContext=createContext(null);
 
 const StoreContextFunction = (props) => {
-    const url="http://localhost:4000";
+    const url="https://tomato-app-ty6w.onrender.com";
     const[cartItems,setCartItems]=useState({});
     const [token,setToken]=useState("");
     const [food_list,setFoodList]=useState([]);
