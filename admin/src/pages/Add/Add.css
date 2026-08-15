@@ -1,0 +1,65 @@
+.add {
+    color: #6d6d6d;
+    padding: 4rem;
+    width: 70%;
+    font-size: 1rem;
+}
+
+.upload img {
+    width: 120px;
+    cursor: pointer;
+}
+
+.upload input::file-selector-button {
+    background-color: transparent;
+    border: 1px solid #a9a9a9;
+    padding: 0.2rem 1rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.upload input::file-selector-button:hover {
+    background-color: #fff0ed;
+    border-color: tomato;
+}
+
+/* .multiple-uploads {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    gap: 1.5rem;    
+} */
+
+.single-upload {
+    display: flex;
+    align-self: center;
+    width: 5%;
+}
+
+.product-name, .product-description {
+    max-width: 320px;
+}
+
+.product-name input, .product-description textarea {
+    padding: 0.5rem;
+}
+
+.category-and-price {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.category select, .price input {
+    max-width: 140px;
+    padding: 0.5rem;
+}
+
+.add-btn {
+    max-width: 120px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}

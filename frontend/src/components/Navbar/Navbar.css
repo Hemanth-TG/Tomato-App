@@ -1,0 +1,132 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    background-color: white;
+    padding: 2rem;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar .logo {
+    cursor: pointer;
+    width: 150px;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #4f4949;
+    cursor: pointer;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.basket-and-dot {
+    position: relative;
+}
+
+.dot {
+    position: absolute;
+    background-color: tomato;
+    top: -8px;
+    right: -8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: fadeIn 1s;
+}
+
+.dot.removeDot {
+    animation: fadeOut 1s forwards;
+}
+
+.navbar-right button {
+    background-color: transparent;
+    border: 1px solid tomato;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navbar-right button:hover {
+    background-color: tomato;
+    color: white;
+}
+
+.navbar-right img {
+    cursor: pointer;
+    /* width: 25px; */
+}
+
+.navbar .active {
+    border-bottom: 2px solid #4f4949;
+}
+
+.navbar-profile {
+    position: relative;
+}
+.navbar-profile-dropdown {
+    position: absolute;
+    display: none;
+    right: 0;
+    animation: fadeIn 0.5s;
+}
+
+.navbar-profile:hover .navbar-profile-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #fff2ef;
+    list-style: none;
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+    border: 1px solid tomato;
+    outline: 2px solid white;
+}
+
+.navbar-profile-dropdown li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.navbar-profile-dropdown img {
+    width: 25px;
+}
+
+.navbar-profile-dropdown li:hover p {
+    color: tomato;
+}
+
+@media (max-width: 1050px) {
+    .navbar .logo {
+        width: 80px;
+    }
+
+    .navbar-menu a {
+        font-size: 14px;
+    }
+
+    .navbar-right img {
+        width: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-menu a {
+        display: none;
+    }
+}
+

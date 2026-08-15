@@ -1,0 +1,45 @@
+.app-download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 5rem 0;
+}
+
+.app-download p {
+    font-size: 1.7rem;
+    font-weight: 500;
+    max-width: 50%;
+    line-height: 2.5rem;
+}
+
+.app-download img {
+    width: 100px;
+}
+
+.app-image {
+    display: flex;
+    gap: 1rem;
+}
+
+.app-image img {
+    cursor: pointer;
+    width: 12rem;
+    transition: 0.5s;
+}
+
+.app-image img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1050px) {
+    .app-download p {
+        max-width: 100%;
+        font-size: 20px;
+    }
+    
+    .app-image {
+        display: flex;
+        flex-direction: column;
+    }
+}

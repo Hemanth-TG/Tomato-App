@@ -1,0 +1,26 @@
+.list-table-format {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 0.5fr;
+    align-items: center;
+    gap: 1rem;
+    font-size: 13px;
+    border: 1px solid #cacaca;
+    padding: 1rem;
+}
+
+.list-table-format.title {
+    background-color: #f9f9f9;
+}
+
+.list-table-format img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+    .list-table-format {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
