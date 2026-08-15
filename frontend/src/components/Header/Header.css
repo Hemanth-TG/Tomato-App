@@ -1,5 +1,5 @@
 .header {
-    background: url('./header_img.png');
+    background: url('../../assets/header_img.png');
     height: 40vw;
     background-size: contain;
     background-repeat: no-repeat;
